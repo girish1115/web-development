@@ -1,0 +1,272 @@
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
+ 2) font-family: 'Poppins', sans-serif;
+ ----------------------------------------*****/
+
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(animate.min.css);
+@import url(normalize.css);
+@import url(meanmenu.css);
+@import url(owl.carousel.min.css);
+@import url(slick.css);
+@import url(jquery-ui.css);
+@import url(nice-select.css);
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+
+* {
+     box-sizing: border-box !important;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     color: #666666;
+     font-size: 14px;
+     font-family: 'Roboto', sans-serif;
+     line-height: 1.80857;
+     font-weight: normal;
+}
+
+img {
+     max-width: 100%;
+     height: auto;
+}
+
+
+
+
+.Services {
+     margin-top: 90px;
+     padding: 60px 0;
+     background: #000;
+     font-family: Poppins;
+}
+
+.Services .titlepage {
+     text-align: center;
+}
+
+.Services .titlepage h2 {
+     color: #fff;
+     padding-bottom: 20px;
+}
+
+.Services .titlepage p {
+     color: #fff;
+}
+
+.Services .Services-box i {
+     background: #fff;
+     width: 100px;
+     height: 100px;
+     border-radius: 50px;
+     display: inline-block;
+     padding-top: 19px;
+}
+
+.Services .Services-box i:hover {
+     background: #ddd;
+}
+
+.Services .Services-box h3 {
+     padding: 20px 0px 20px 0px;
+     font-size: 20px;
+     line-height: 25px;
+     color: #fff;
+     display: block;
+     font-weight: 500;
+}
+
+.Services .Services-box {
+     text-align: center;
+     background-color: transparent;
+     border-radius: 20px;
+     border: #cecfd7 solid 2px;
+     padding: 40px;
+     transition: ease-in all 0.5s;
+     margin-bottom: 30px;
+}
+
+.Services .Services-box:hover {
+     background: #696969;
+     transition: ease-in all 0.5s;
+     cursor: pointer;
+}
+
+.Services .Services-box p {
+     font-size: 16px;
+     line-height: 24px;
+     color: #fff;
+}
+
+/* nav bar */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'poppins', sans-serif;
+}
+
+.logo {
+     font-size: 30px;
+     color: #fff;
+     font-weight: bold;
+}
+
+nav {
+     height: 80px;
+     background-color: #000;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0px 50px 0px 100px;
+     height: 60px;
+}
+
+nav ul {
+     padding-top: 15px;
+     display: flex;
+     list-style: none;
+}
+
+nav ul li {
+     margin: 0 10px;
+}
+
+nav ul li a {
+     color: #fff;
+     text-decoration: none;
+     font-size: 16px;
+     font-weight: 600;
+     letter-spacing: 1px;
+     padding: 5px 10px;
+     transition: all 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+     background: #fff;
+     color: black;
+     border-radius: 18px;
+}
+
+nav .menu-btn i {
+     color: #fff;
+     font-size: 22px;
+     cursor: pointer;
+     display: none;
+}
+
+#click {
+     display: none;
+}
+
+@media (max-width: 940px) {
+     nav .menu-btn i {
+          display: block;
+     }
+
+     #click:checked~.menu-btn i:before {
+          content: "\f00d";
+     }
+
+     nav ul {
+          position: fixed;
+          top: 80px;
+          left: -100%;
+          background: #000;
+          height: 100vh;
+          width: 100%;
+          display: block;
+          transition: all 0.3s ease;
+          text-align: center;
+          transition: all 0.3s ease;
+     }
+
+     #click:checked~ul {
+          left: 0%;
+     }
+
+     nav ul li {
+          margin: 40px 0;
+     }
+
+     nav ul li a {
+          font-size: 20px;
+          display: block;
+     }
+
+     nav ul li a:hover,
+     nav ul li a.active {
+          background: none;
+          color: #fff;
+     }
+}
+
+/* footer  */
+#footer-container {
+     padding: 4% 15%;
+     color: #fff;
+}
+
+.footer {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     margin: 0 auto;
+     font-size: large;
+}
+
+.footer-heading {
+     display: flex;
+     flex-direction: column;
+}
+
+.footer-heading a {
+     color: #fff;
+     text-decoration: none;
+     margin-bottom: 0.5rem;
+}
+
+.colch {
+     padding: 2% 5% 2% 0%;
+}
+
+.footer-heading a:hover {
+     transition: 0.3s ease-out;
+}
+
+#footer-email {
+     width: 100%;
+     height: 40px;
+     border-radius: 4px;
+     outline: none;
+     border: solid 1px;
+     font-size: 1rem;
+     margin-bottom: 1rem;
+}
+
+.frm {
+     text-align: center;
+}
+
+.footer-email-btn {
+     border-radius: 4px;
+     outline: none;
+     border: none;
+     font-size: 1rem;
+}
+
+#footer-email-btn:hover {
+     cursor: pointer;
+     transition: all 0.4s ease-out;
+}
